@@ -1,0 +1,108 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type CountryCode {
+  FIFA: String!
+  Dial: String!
+  ISO3166_1_Alpha_3: Names!
+  MARC: String!
+  is_independent: String!
+  ISO3166_1_numeric: Names!
+  GAUL: String!
+  FIPS: String!
+  WMO: String!
+  ISO3166_1_Alpha_2: Names!
+  ITU: String!
+  IOC: String!
+  DS: String!
+  UNTERM_Spanish_Formal: Names!
+  Global_Code: Names!
+  Intermediate_Region_Code: Names!
+  official_name_fr: String!
+  UNTERM_French_Short: Names!
+  ISO4217_currency_name: Names!
+  Developed_Developing_Countries: Names!
+  UNTERM_Russian_Formal: Names!
+  UNTERM_English_Short: Names!
+  ISO4217_currency_alphabetic_code: Names!
+  Small_Island_Developing_States: Names!
+  UNTERM_Spanish_Short: Names!
+  ISO4217_currency_numeric_code: Names!
+  UNTERM_Chinese_Formal: Names!
+  UNTERM_French_Formal: Names!
+  UNTERM_Russian_Short: Names!
+  M49: Float!
+  Sub_region_Code: Names!
+  Region_Code: Names!
+  official_name_ar: String!
+  ISO4217_currency_minor_unit: Names!
+  UNTERM_Arabic_Formal: Names!
+  UNTERM_Chinese_Short: Names!
+  Land_Locked_Developing_Countries: Names!
+  Intermediate_Region_Name: Names!
+  official_name_es: String!
+  UNTERM_English_Formal: Names!
+  official_name_cn: String!
+  official_name_en: String!
+  ISO4217_currency_country_name: Names!
+  Least_Developed_Countries: Names!
+  Region_Name: String!
+  UNTERM_Arabic_Short: Names!
+  Sub_region_Name: Names!
+  official_name_ru: String!
+  Global_Name: Names!
+  Capital: String!
+  Continent: String!
+  TLD: String!
+  Languages: String!
+  Geoname_ID: Names!
+  CLDR_display_name: Names!
+  EDGAR: String!
+}
+
+enum Names {
+  ISO3166_1_Alpha_3
+  ISO3166_1_numeric
+  ISO3166_1_Alpha_2
+  UNTERM_Spanish_Formal
+  Global_Code
+  Intermediate_Region_Code
+  UNTERM_French_Short
+  ISO4217_currency_name
+  UNTERM_Russian_Formal
+  UNTERM_English_Short
+  ISO4217_currency_alphabetic_code
+  Small_Island_Developing_States
+  UNTERM_Spanish_Short
+  ISO4217_currency_numeric_code
+  UNTERM_Chinese_Formal
+  UNTERM_French_Formal
+  UNTERM_Russian_Short
+  Sub_region_Code
+  Region_Code
+  ISO4217_currency_minor_unit
+  UNTERM_Arabic_Formal
+  UNTERM_Chinese_Short
+  Land_Locked_Developing_Countries
+  Intermediate_Region_Name
+  UNTERM_English_Formal
+  ISO4217_currency_country_name
+  Least_Developed_Countries
+  UNTERM_Arabic_Short
+  Sub_region_Name
+  Global_Name
+  Geoname_ID
+  CLDR_display_name
+  DEVELOPED
+  DEVELOPING
+}
+
+type Query {
+  countryCodes: [CountryCode!]!
+  countryCode(input: FindCountryCodeInput!): CountryCode!
+}
+
+input FindCountryCodeInput {
+  id: String!
+}
